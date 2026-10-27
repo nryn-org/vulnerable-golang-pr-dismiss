@@ -1,0 +1,55 @@
+version: 1.0.0
+ignore:
+  - id: endorignore-1
+    username: nrynss
+    update_time: 2026-10-27 11:25:54 UTC
+    finding_name: 'GHSA-w73w-5m7g-f7qc: Authorization bypass in github.com/dgrijalva/jwt-go'
+    parent_name: go://github.com/nryn-org/vulnerable-golang-pr-dismiss@pr/1
+    dependency_name: go://github.com/dgrijalva/jwt-go@v3.2.0+incompatible
+    vuln_id: GHSA-w73w-5m7g-f7qc
+    extra_key: GHSA-w73w-5m7g-f7qc
+    reason: false-positive
+    comments: We only parse tokens we sign ourselves, so the aud claim bypass does not apply.
+  - id: endorignore-2
+    username: nrynss
+    update_time: 2026-10-27 11:30:06 UTC
+    finding_name: 'GHSA-c3h9-896r-86jm: Improper Input Validation in GoGo Protobuf'
+    parent_name: go://github.com/nryn-org/vulnerable-golang-pr-dismiss@pr/1
+    dependency_name: go://github.com/gogo/protobuf@v1.3.1
+    vuln_id: GHSA-c3h9-896r-86jm
+    extra_key: GHSA-c3h9-896r-86jm
+    reason: risk-accepted
+    expiration_date: 2027-03-31
+    comments: Protobuf input comes only from internal services.
+  - id: endorignore-3
+    username: nrynss
+    update_time: 2026-10-27 11:30:06 UTC
+    finding_name: Unmaintained Dependency github.com/dgrijalva/jwt-go@v3.2.0+incompatible
+    parent_name: go://github.com/nryn-org/vulnerable-golang-pr-dismiss@pr/1
+    dependency_name: go://github.com/dgrijalva/jwt-go@v3.2.0+incompatible
+    extra_key: go://github.com/dgrijalva/jwt-go@v3.2.0+incompatible
+    reason: in-triage
+    comments: Migration to golang-jwt is tracked separately.
+  - id: endorignore-4
+    username: nrynss
+    update_time: 2026-10-27 11:30:06 UTC
+    finding_name: Dependency github.com/dgrijalva/jwt-go@v3.2.0+incompatible With Very Low Activity Score
+    parent_name: go://github.com/nryn-org/vulnerable-golang-pr-dismiss@pr/1
+    dependency_name: go://github.com/dgrijalva/jwt-go@v3.2.0+incompatible
+    extra_key: go://github.com/dgrijalva/jwt-go@v3.2.0+incompatible
+    reason: in-triage
+    comments: Migration to golang-jwt is tracked separately.
+  - id: endorignore-5
+    username: nrynss
+    update_time: 2026-10-27 11:30:06 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #ee15ee'
+    extra_key: '677f6aeefd6be28562e9a457Code Injection - Non-static command detected inside `exec.Cmd`: ID #ee15ee'
+    reason: false-positive
+    comments: The CLI only runs commands the local user passes in.
+  - id: endorignore-6
+    username: nrynss
+    update_time: 2026-10-27 11:30:06 UTC
+    finding_name: 'Command injection through subprocess creation in Golang: ID #f9e6da'
+    extra_key: '677f6aeefd6be28562e9a457Command injection through subprocess creation in Golang: ID #f9e6da'
+    reason: false-positive
+    comments: The CLI only runs commands the local user passes in.
