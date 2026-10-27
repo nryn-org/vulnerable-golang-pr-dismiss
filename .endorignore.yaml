@@ -1,0 +1,12 @@
+version: 1.0.0
+ignore:
+  - id: endorignore-1
+    username: nrynss
+    update_time: 2026-10-27 11:25:54 UTC
+    finding_name: 'GHSA-w73w-5m7g-f7qc: Authorization bypass in github.com/dgrijalva/jwt-go'
+    parent_name: go://github.com/nryn-org/vulnerable-golang-pr-dismiss@pr/1
+    dependency_name: go://github.com/dgrijalva/jwt-go@v3.2.0+incompatible
+    vuln_id: GHSA-w73w-5m7g-f7qc
+    extra_key: GHSA-w73w-5m7g-f7qc
+    reason: false-positive
+    comments: We only parse tokens we sign ourselves, so the aud claim bypass does not apply.
