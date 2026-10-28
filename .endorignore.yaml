@@ -1,0 +1,22 @@
+version: 1.0.0
+ignore:
+  - id: endorignore-1
+    username: nrynss
+    update_time: 2026-10-28 07:56:45 UTC
+    finding_name: 'GHSA-w73w-5m7g-f7qc: Authorization bypass in github.com/dgrijalva/jwt-go'
+    parent_name: go://github.com/nryn-org/vulnerable-golang-pr-dismiss@pr/2
+    dependency_name: go://github.com/dgrijalva/jwt-go@v3.2.0+incompatible
+    vuln_id: GHSA-w73w-5m7g-f7qc
+    extra_key: GHSA-w73w-5m7g-f7qc
+    reason: false-positive
+    comments: Merge carry-over test
+  - id: endorignore-2
+    username: nrynss
+    update_time: 2026-10-28 07:56:45 UTC
+    finding_name: 'GHSA-c3h9-896r-86jm: Improper Input Validation in GoGo Protobuf'
+    parent_name: go://github.com/nryn-org/vulnerable-golang-pr-dismiss@pr/2
+    dependency_name: go://github.com/gogo/protobuf@v1.3.1
+    vuln_id: GHSA-c3h9-896r-86jm
+    extra_key: GHSA-c3h9-896r-86jm
+    reason: risk-accepted
+    comments: Merge carry-over test
