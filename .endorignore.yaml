@@ -20,3 +20,21 @@ ignore:
     extra_key: GHSA-c3h9-896r-86jm
     reason: risk-accepted
     comments: Merge carry-over test
+  - id: endorignore-3
+    username: nrynss
+    update_time: 2026-10-28 15:45:43 UTC
+    finding_name: 'GHSA-3xh2-74w9-5vxm: Integer overflow in github.com/gorilla/websocket'
+    dependency_name: go://github.com/gorilla/websocket@v1.4.0
+    vuln_id: GHSA-3xh2-74w9-5vxm
+    extra_key: GHSA-3xh2-74w9-5vxm
+    reason: risk-accepted
+    comments: 'Retest on v1.7.1224: frame sizes are capped by our proxy.'
+  - id: endorignore-4
+    username: nrynss
+    update_time: 2026-10-28 15:45:43 UTC
+    finding_name: 'GHSA-w67g-5rqw-f597: Gorilla WebSocket Uses Cryptographically Weak PRNG for WebSocket Mask Key'
+    dependency_name: go://github.com/gorilla/websocket@v1.4.0
+    vuln_id: GHSA-w67g-5rqw-f597
+    extra_key: GHSA-w67g-5rqw-f597
+    reason: risk-accepted
+    comments: 'Retest on v1.7.1224: we only use the server side.'
