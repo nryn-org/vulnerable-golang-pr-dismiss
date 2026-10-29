@@ -86,3 +86,12 @@ ignore:
     vuln_id: GHSA-69ch-w2m2-3vjp
     extra_key: GHSA-69ch-w2m2-3vjp
     reason: risk-accepted
+  - id: endorignore-10
+    username: nrynss
+    update_time: 2026-10-29 15:13:59 UTC
+    finding_name: 'GHSA-qq97-vm5h-rrhg: OCI Manifest Type Confusion Issue'
+    dependency_name: go://github.com/docker/distribution@v2.7.1+incompatible
+    vuln_id: GHSA-qq97-vm5h-rrhg
+    extra_key: GHSA-qq97-vm5h-rrhg
+    reason: risk-accepted
+    comments: Typed by hand while the stock template is in place.
