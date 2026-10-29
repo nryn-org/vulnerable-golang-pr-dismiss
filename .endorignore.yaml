@@ -86,3 +86,37 @@ ignore:
     vuln_id: GHSA-69ch-w2m2-3vjp
     extra_key: GHSA-69ch-w2m2-3vjp
     reason: risk-accepted
+  - id: endorignore-10
+    username: nrynss
+    update_time: 2026-10-29 15:13:59 UTC
+    finding_name: 'GHSA-qq97-vm5h-rrhg: OCI Manifest Type Confusion Issue'
+    dependency_name: go://github.com/docker/distribution@v2.7.1+incompatible
+    vuln_id: GHSA-qq97-vm5h-rrhg
+    extra_key: GHSA-qq97-vm5h-rrhg
+    reason: risk-accepted
+    comments: Typed by hand while the stock template is in place.
+  - id: endorignore-11
+    username: nrynss
+    update_time: 2026-10-29 15:18:36 UTC
+    finding_name: 'GHSA-685w-q87j-wqw3: Distribution: Client `manifests.Get()` does not verify returned content against requested digest'
+    dependency_name: go://github.com/docker/distribution@v2.7.1+incompatible
+    vuln_id: GHSA-685w-q87j-wqw3
+    extra_key: GHSA-685w-q87j-wqw3
+    reason: risk-accepted
+    comments: 'Copied from the custom template: we pin images by digest.'
+  - id: endorignore-12
+    username: nrynss
+    update_time: 2026-10-29 15:18:36 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #dd961b'
+    extra_key: '677f6aeefd6be28562e9a457Code Injection - Non-static command detected inside `exec.Cmd`: ID #dd961b'
+    reason: false-positive
+    comments: 'Copied from the custom template: the image name is validated by reference.ParseNormalizedNamed.'
+  - id: endorignore-13
+    username: nrynss
+    update_time: 2026-10-29 16:36:55 UTC
+    finding_name: 'GHSA-f2g3-hh2r-cwgc: Distribution: stale blob access resurrection via repo-scoped redis descriptor cache invalidation'
+    dependency_name: go://github.com/docker/distribution@v2.7.1+incompatible
+    vuln_id: GHSA-f2g3-hh2r-cwgc
+    extra_key: GHSA-f2g3-hh2r-cwgc
+    reason: risk-accepted
+    comments: Copied from the custom template with the full dismiss additions. We do not use the redis descriptor cache.
