@@ -95,3 +95,12 @@ ignore:
     extra_key: GHSA-33m6-q9v5-62r7
     reason: risk-accepted
     comments: UUIDs here are request IDs, not secrets.
+  - id: endorignore-11
+    username: nrynss
+    update_time: 2026-10-29 09:01:53 UTC
+    finding_name: 'GHSA-25xm-hr59-7c27: github.com/ulikunitz/xz fixes readUvarint Denial of Service (DoS)'
+    dependency_name: go://github.com/ulikunitz/xz@v0.5.7
+    vuln_id: GHSA-25xm-hr59-7c27
+    extra_key: GHSA-25xm-hr59-7c27
+    reason: risk-accepted
+    comments: We only decompress archives we build ourselves.
