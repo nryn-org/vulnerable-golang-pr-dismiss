@@ -95,3 +95,19 @@ ignore:
     extra_key: GHSA-qq97-vm5h-rrhg
     reason: risk-accepted
     comments: Typed by hand while the stock template is in place.
+  - id: endorignore-11
+    username: nrynss
+    update_time: 2026-10-29 15:18:36 UTC
+    finding_name: 'GHSA-685w-q87j-wqw3: Distribution: Client `manifests.Get()` does not verify returned content against requested digest'
+    dependency_name: go://github.com/docker/distribution@v2.7.1+incompatible
+    vuln_id: GHSA-685w-q87j-wqw3
+    extra_key: GHSA-685w-q87j-wqw3
+    reason: risk-accepted
+    comments: 'Copied from the custom template: we pin images by digest.'
+  - id: endorignore-12
+    username: nrynss
+    update_time: 2026-10-29 15:18:36 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #dd961b'
+    extra_key: '677f6aeefd6be28562e9a457Code Injection - Non-static command detected inside `exec.Cmd`: ID #dd961b'
+    reason: false-positive
+    comments: 'Copied from the custom template: the image name is validated by reference.ParseNormalizedNamed.'
