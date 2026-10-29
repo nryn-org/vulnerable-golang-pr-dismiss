@@ -7,4 +7,14 @@ require (
 	github.com/gogo/protobuf v1.3.1
 )
 
-require github.com/gorilla/websocket v1.4.0
+require (
+	github.com/gorilla/websocket v1.4.0
+	github.com/tidwall/gjson v1.6.0
+	golang.org/x/text v0.3.0
+)
+
+require (
+	github.com/stretchr/testify v1.12.1 // indirect
+	github.com/tidwall/match v1.0.1 // indirect
+	github.com/tidwall/pretty v1.0.0 // indirect
+)
