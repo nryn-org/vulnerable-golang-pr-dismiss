@@ -111,3 +111,12 @@ ignore:
     extra_key: '677f6aeefd6be28562e9a457Code Injection - Non-static command detected inside `exec.Cmd`: ID #dd961b'
     reason: false-positive
     comments: 'Copied from the custom template: the image name is validated by reference.ParseNormalizedNamed.'
+  - id: endorignore-13
+    username: nrynss
+    update_time: 2026-10-29 16:36:55 UTC
+    finding_name: 'GHSA-f2g3-hh2r-cwgc: Distribution: stale blob access resurrection via repo-scoped redis descriptor cache invalidation'
+    dependency_name: go://github.com/docker/distribution@v2.7.1+incompatible
+    vuln_id: GHSA-f2g3-hh2r-cwgc
+    extra_key: GHSA-f2g3-hh2r-cwgc
+    reason: risk-accepted
+    comments: Copied from the custom template with the full dismiss additions. We do not use the redis descriptor cache.
