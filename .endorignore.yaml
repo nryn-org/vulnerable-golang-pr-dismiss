@@ -46,6 +46,7 @@ ignore:
     vuln_id: GHSA-5rcv-m4m3-hfh7
     extra_key: GHSA-5rcv-m4m3-hfh7
     reason: false-positive
+    expiration_date: 2026-10-01
     comments: 'Matrix 9: CVE alias for GHSA-5rcv-m4m3-hfh7'
   - id: endorignore-6
     username: nrynss
