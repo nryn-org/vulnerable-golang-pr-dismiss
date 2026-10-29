@@ -86,3 +86,30 @@ ignore:
     vuln_id: GHSA-69ch-w2m2-3vjp
     extra_key: GHSA-69ch-w2m2-3vjp
     reason: risk-accepted
+  - id: endorignore-10
+    username: nrynss
+    update_time: 2026-10-29 08:57:03 UTC
+    finding_name: 'GHSA-33m6-q9v5-62r7: go.uuid has Predictable UUID Identifiers'
+    dependency_name: go://github.com/satori/go.uuid@v1.2.0
+    vuln_id: GHSA-33m6-q9v5-62r7
+    extra_key: GHSA-33m6-q9v5-62r7
+    reason: risk-accepted
+    comments: UUIDs here are request IDs, not secrets.
+  - id: endorignore-11
+    username: nrynss
+    update_time: 2026-10-29 09:01:53 UTC
+    finding_name: 'GHSA-25xm-hr59-7c27: github.com/ulikunitz/xz fixes readUvarint Denial of Service (DoS)'
+    dependency_name: go://github.com/ulikunitz/xz@v0.5.7
+    vuln_id: GHSA-25xm-hr59-7c27
+    extra_key: GHSA-25xm-hr59-7c27
+    reason: risk-accepted
+    comments: We only decompress archives we build ourselves.
+  - id: endorignore-12
+    username: nrynss
+    update_time: 2026-10-29 14:17:34 UTC
+    finding_name: 'GHSA-jc7w-c686-c4v9: github.com/ulikunitz/xz leaks memory when decoding a corrupted multiple LZMA archives'
+    dependency_name: go://github.com/ulikunitz/xz@v0.5.7
+    vuln_id: GHSA-jc7w-c686-c4v9
+    extra_key: GHSA-jc7w-c686-c4v9
+    reason: risk-accepted
+    comments: Copied from a custom PR comment template.

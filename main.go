@@ -8,6 +8,8 @@ import (
 	_ "github.com/dgrijalva/jwt-go"
 	_ "github.com/gogo/protobuf/proto"
 	_ "github.com/gorilla/websocket"
+	_ "github.com/satori/go.uuid"
+	_ "github.com/ulikunitz/xz"
 )
 
 func main() {
