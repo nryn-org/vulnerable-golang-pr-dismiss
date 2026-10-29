@@ -38,3 +38,50 @@ ignore:
     extra_key: GHSA-w67g-5rqw-f597
     reason: risk-accepted
     comments: 'Retest on v1.7.1224: we only use the server side.'
+  - id: endorignore-5
+    username: nrynss
+    update_time: 2026-10-29 06:59:26 UTC
+    finding_name: 'GHSA-5rcv-m4m3-hfh7: golang.org/x/text Infinite loop'
+    dependency_name: go://golang.org/x/text@v0.3.0
+    vuln_id: GHSA-5rcv-m4m3-hfh7
+    extra_key: GHSA-5rcv-m4m3-hfh7
+    reason: false-positive
+    comments: 'Matrix 9: CVE alias for GHSA-5rcv-m4m3-hfh7'
+  - id: endorignore-6
+    username: nrynss
+    update_time: 2026-10-29 06:59:26 UTC
+    finding_name: 'GHSA-p64j-r5f4-pwwx: Improper Validation of Array Index in GJSON'
+    parent_name: go://github.com/nryn-org/vulnerable-golang-pr-dismiss@pr/4
+    dependency_name: go://github.com/tidwall/gjson@v1.6.0
+    vuln_id: GHSA-p64j-r5f4-pwwx
+    extra_key: GHSA-p64j-r5f4-pwwx
+    reason: risk-accepted
+    comments: 'Matrix 1: this PR only'
+  - id: endorignore-7
+    username: nrynss
+    update_time: 2026-10-29 06:59:26 UTC
+    finding_name: 'GHSA-w942-gw6m-p62c: Denial of service in GJSON'
+    parent_name: go://github.com/nryn-org/vulnerable-golang-pr-dismiss
+    dependency_name: go://github.com/tidwall/gjson@v1.6.0
+    vuln_id: GHSA-w942-gw6m-p62c
+    extra_key: GHSA-w942-gw6m-p62c
+    reason: risk-accepted
+    comments: 'Matrix 2: versionless parent'
+  - id: endorignore-8
+    username: nrynss
+    update_time: 2026-10-29 06:59:26 UTC
+    finding_name: 'GO-2026-6629: Panic parsing crafted input in x/text/secure/precis in golang.org/x/text'
+    dependency_name: go://golang.org/x/text@v0.3.0
+    vuln_id: GO-2026-6629
+    extra_key: GO-2026-6629
+    reason: risk-accepted
+    expire_if_fix_available: true
+    comments: 'Matrix 10: until a fix ships'
+  - id: endorignore-9
+    username: nrynss
+    update_time: 2026-10-29 06:59:26 UTC
+    finding_name: 'GHSA-69ch-w2m2-3vjp: golang.org/x/text/language Denial of service via crafted Accept-Language header'
+    dependency_name: go://golang.org/x/text@v0.3.0
+    vuln_id: GHSA-69ch-w2m2-3vjp
+    extra_key: GHSA-69ch-w2m2-3vjp
+    reason: risk-accepted
