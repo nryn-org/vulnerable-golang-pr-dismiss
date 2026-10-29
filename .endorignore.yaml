@@ -86,3 +86,20 @@ ignore:
     vuln_id: GHSA-69ch-w2m2-3vjp
     extra_key: GHSA-69ch-w2m2-3vjp
     reason: risk-accepted
+  - id: endorignore-10
+    username: nrynss
+    update_time: 2026-10-29 17:24:32 UTC
+    finding_name: 'GHSA-h395-qcrw-5vmq: Inconsistent Interpretation of HTTP Requests in github.com/gin-gonic/gin'
+    parent_name: go://github.com/nryn-org/vulnerable-golang-pr-dismiss@pr/8
+    dependency_name: go://github.com/gin-gonic/gin@v1.6.3
+    vuln_id: GHSA-h395-qcrw-5vmq
+    extra_key: GHSA-h395-qcrw-5vmq
+    reason: risk-accepted
+    comments: Gin sits behind our gateway, which normalizes requests.
+  - id: endorignore-11
+    username: nrynss
+    update_time: 2026-10-29 17:24:32 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #ea923c'
+    extra_key: '677f6aeefd6be28562e9a457Code Injection - Non-static command detected inside `exec.Cmd`: ID #ea923c'
+    reason: false-positive
+    comments: Internal admin route, the tool name is allowlisted upstream.
