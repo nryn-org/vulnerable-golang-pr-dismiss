@@ -86,3 +86,13 @@ ignore:
     vuln_id: GHSA-69ch-w2m2-3vjp
     extra_key: GHSA-69ch-w2m2-3vjp
     reason: risk-accepted
+  - id: endorignore-pr9-1
+    username: nrynss
+    update_time: 2026-11-11 10:01:01 UTC
+    finding_name: 'GHSA-jc7w-c686-c4v9: github.com/ulikunitz/xz leaks memory when decoding a corrupted multiple LZMA archives'
+    parent_name: go://github.com/nryn-org/vulnerable-golang-pr-dismiss
+    dependency_name: go://github.com/ulikunitz/xz@v0.5.7
+    vuln_id: GHSA-jc7w-c686-c4v9
+    extra_key: GHSA-jc7w-c686-c4v9
+    reason: false-positive
+    comments: Only our test fixtures use xz, and they never call the multi-stream decoder that leaks.
